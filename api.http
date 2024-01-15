@@ -1,0 +1,29 @@
+### Get all products
+GET http://localhost:3000/api/v1/products
+
+
+### Get a product by id
+GET http://localhost:3000/api/v1/products/--1--
+
+
+### Create a product
+POST http://localhost:3000/api/v1/products
+Content-Type: application/json
+
+{
+  "name": "Randomproduct",
+  "price": "h",
+  "image": "https://randomImages.fakeImage.png"
+}
+
+### Update a product
+PATCH  http://localhost:3000/api/v1/products/8653daa3-63a2-4374-90b2-c0199d32c13c
+Content-Type: application/json
+
+{
+  "name": 4,
+  "price": 2
+}
+
+### Update a product
+DELETE   http://localhost:3000/api/v1/products/8653daa3-63a2-4374-90b2-c0199d32c13c
